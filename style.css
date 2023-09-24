@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;500;600&display=swap');
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+:root {
+    --primary-color:#141E46;
+    --secondary-color:#C70039;
+    --third-color:#FF6969;
+    --light-color:#FFF5E0;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    height:100%;
+    overflow-x: hidden;
+    background-color: var(--light-color);
+}
+.flex{
+    display:flex;
+    align-items: center;
+}
+.container{
+    margin-left:2.5em;
+    margin-right:2.5em;
+    /* border: 1px solid black; */
+}
+.front-page{
+    height: 100vh;
+}
+.navbar{
+    justify-content: space-between;
+    /* border:1px solid black; */
+    font-family: 'Poppins', sans-serif;
+    margin-top: 1em;
+}
+.search{
+    width:40vh;
+    /* border:1px solid black; */
+    /* margin-left:8vh; */
+    height: auto;
+    display: inline-block; 
+}
+#search-box{
+    height: 2em;
+    width:25vh;
+    display: inline;
+    border-radius: 20px;
+    border: 1px solid transparent;
+    text-align: center;
+}
+/* #search-btn{
+    margin-left:2em;
+    width: 1.6rem;
+} */
+.navbar-menu{
+    gap: 4em;
+    margin-right: 6em;
+    justify-content: center;
+    /* border: 1px solid red; */
+    list-style: none;
+}
+.navbar-menu li:hover{
+    color:gray;
+    transform: scale(1.2);
+    transition: ease-in-out 0.4s;
+}
+.user{
+    /* border:1px solid red; */
+    width:10rem;
+    justify-content: space-between;
+}
+.btn{
+    width:5rem;
+    height:2em;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border-radius: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: none;
+    display: inline-block;
+    padding-top:2px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+.search-btn{
+    background-color: var(--primary-color);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    outline: none;
+    display: inline-block;
+    padding-top:2px;
+    margin-left:0.5rem;
+    padding:0.2rem;
+}
+.slide-window{
+    max-width: 100%;
+    height: 65vh;
+    margin-top: 10vh;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid transparent;
+    border-radius: 25px;
+    background-color: var(--third-color);
+    /* background-image: url("images/isa-macouzet-72GwiojCwoI-unsplash.jpg"); */
+    background-position: center;
+    object-fit: contain;
+}
+
+
