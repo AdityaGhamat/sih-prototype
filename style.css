@@ -4,10 +4,10 @@ font-family: 'Montserrat', sans-serif;
 font-family: 'Poppins', sans-serif;
 */
 :root {
-    --primary-color:#141E46;
-    --secondary-color:#C70039;
-    --third-color:#FF6969;
-    --light-color:#FFF5E0;
+    --primary-color:#929AAB;
+    --secondary-color:#393E46;
+    --third-color:#EEEEEE;
+    --light-color:#F7F7F7;
 }
 *{
     margin: 0;
@@ -26,7 +26,6 @@ font-family: 'Poppins', sans-serif;
 .container{
     margin-left:2.5em;
     margin-right:2.5em;
-    /* border: 1px solid black; */
 }
 .front-page{
     height: 100vh;
@@ -40,9 +39,10 @@ font-family: 'Poppins', sans-serif;
 .search{
     width:40vh;
     /* border:1px solid black; */
-    /* margin-left:8vh; */
+    margin-left:1vw;
     height: auto;
     display: inline-block; 
+    transform: scale(1.1);
 }
 #search-box{
     height: 2em;
@@ -58,18 +58,18 @@ font-family: 'Poppins', sans-serif;
 } */
 .navbar-menu{
     gap: 4em;
-    margin-right: 6em;
+    margin-right: 10em;
     justify-content: center;
     /* border: 1px solid red; */
     list-style: none;
+    cursor: pointer;
 }
 .navbar-menu li:hover{
-    color:gray;
-    transform: scale(1.2);
+    color:skyblue;
+    transform: scale(1.1);
     transition: ease-in-out 0.4s;
 }
 .user{
-    /* border:1px solid red; */
     width:10rem;
     justify-content: space-between;
 }
@@ -87,7 +87,12 @@ font-family: 'Poppins', sans-serif;
     outline: none;
     display: inline-block;
     padding-top:2px;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19); */
+}
+.btn:hover{
+    transform: scale(1.1);
+    transition: ease-in-out 0.4s;
+    opacity: 0.8;
 }
 .search-btn{
     background-color: var(--primary-color);
@@ -104,17 +109,106 @@ font-family: 'Poppins', sans-serif;
     margin-left:0.5rem;
     padding:0.2rem;
 }
+/* Slide show window style starts here*/
+
 .slide-window{
     max-width: 100%;
-    height: 65vh;
-    margin-top: 10vh;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    height: 80vh;
+    margin-top: 5vh;
     border: 1px solid transparent;
-    border-radius: 25px;
-    background-color: var(--third-color);
-    /* background-image: url("images/isa-macouzet-72GwiojCwoI-unsplash.jpg"); */
-    background-position: center;
-    object-fit: contain;
+    border-radius: 50px;
+    position: relative;
 }
+.swiper {
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+  }
 
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    /* filter: brightness(80%); */
+  }
+  #goa_img{
+    filter: brightness(80%);
+  }
+  .image_headings{
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:50%;
+    left:45%;
+    color:#fff;
+    transform: scale(2);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    text-shadow: 3px 3px 5px rgba(255,255,255,0.39);
+  }
+
+  /*page 2 starts*/
+.map_with_info{
+    min-height:100vh;
+    position: relative;
+  }
+.header_of_map{
+    margin:2vh 0 0 2vw;
+    font-family: 'Poppins', sans-serif;
+}
+.india_map{
+    justify-content: center;
+    margin-top:6vh;
+    transform: scale(1.2);
+    filter: drop-shadow(3px 3px 8px black);
+}
+.info_of_city{
+    width:20%;
+    position: absolute;
+}
+.heading_one{
+    top:20%;
+    right:3rem;
+}
+.heading_two{
+    top: 45%;
+    left: 3rem;
+}
+.heading_three{
+    top:60%;
+    right:3rem;
+}
+.city_name{
+    font-family: 'Montserrat', sans-serif;
+}
+.desc_of_city{
+    font-family: 'Montserrat', sans-serif;
+    color: var(--primary-color);
+    font-size: small;
+}
+.location_icon_one{
+    position: absolute;
+    top: 55%;
+    left:36%;
+}
+.location_icon_two{
+    position: absolute;
+    bottom:14%;
+    left:41%;
+}
+.location_icon_three{
+    position: absolute;
+    top:47%;
+    left:33%;
+}
