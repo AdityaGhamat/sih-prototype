@@ -1,3 +1,7 @@
+AOS.init({
+  offset:200,
+  duration:1000
+});
 var swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
@@ -15,3 +19,16 @@ var swiper = new Swiper(".mySwiper", {
       prevEl: ".swiper-button-prev",
     },
   });
+  gsap.from(".search,.navbar-menu,.user,.btn",{
+    y:-100,
+    duration:0.5,
+    delay:0.5,
+    opacity:0,
+    stagger: {
+      each: 0.2,
+      from: "start"
+    }
+  });
+  
+
+

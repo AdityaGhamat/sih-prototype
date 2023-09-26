@@ -99,7 +99,7 @@ font-family: 'Poppins', sans-serif;
     color: #fff;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 50%;
     text-align: center;
     text-transform: uppercase;
     border: 1px solid transparent;
@@ -172,6 +172,8 @@ font-family: 'Poppins', sans-serif;
     margin-top:6vh;
     transform: scale(1.2);
     filter: drop-shadow(3px 3px 8px black);
+    opacity: 1;
+    
 }
 .info_of_city{
     width:20%;
@@ -198,17 +200,82 @@ font-family: 'Poppins', sans-serif;
     font-size: small;
 }
 .location_icon_one{
-    position: absolute;
-    top: 55%;
-    left:36%;
+   position: absolute;
+   margin-left:35.5vw;
+   margin-top:-33vh;
+    
 }
 .location_icon_two{
     position: absolute;
-    bottom:14%;
-    left:41%;
+    margin-left:39.5vw;
+    margin-top:-8vh;
 }
 .location_icon_three{
     position: absolute;
-    top:47%;
-    left:33%;
+    margin-left:33.5vw;
+    margin-top:-39vh;
+}
+.ad-boxes{
+    height:100vh;
+    position: relative;
+}
+.extra_info_box{
+    height:40vh;
+    position:relative;
+}
+.about_us_box{
+    height:70vh;
+    position:realtive;
+}
+.footer{
+    height: 50vh;
+    position:relative;
+    background-color: var(--secondary-color);
+    background-color: linear-gradient(to right,#00093c,2d0b00);
+}
+.socialIcons {
+ justify-content: center;
+ padding-top: 15vh;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:10px;
+    background-color: white;
+    margin:10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size:2rem;
+    color:black;
+    opacity: 0.9;
+}
+.socialIcons a:hover{
+    color:white;
+    transition: 0.5s;
+}
+.footerNav{
+    justify-content: center;
+    margin-top: 1em;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.footerUl{
+    display:flex;
+    gap:2rem;
+    font-size: 2rem;
+}
+.footerUl li a{
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.last_note{
+    justify-content: center;
+    padding-top:1.5rem;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dev dynamos</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
@@ -75,35 +76,64 @@
             </div>     
         </div>
         <div class="map_with_info container" id="map_with_info">
-            <h1 class="header_of_map">WE ARE LOCATED AT:</h1>        
-            <div class="info_of_city heading_one">
+            <h1 class="header_of_map" data-aos="fade-right" >WE ARE LOCATED AT:</h1>        
+            <div class="info_of_city heading_one" data-aos="fade-right">
                 <h2 class="city_name">GUJRAT</h2>
                 <p class="desc_of_city">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis dolores, distinctio beatae deleniti laborum aspernatur cumque sed quibusdam non omnis.</p>
             </div>
-            <div class="info_of_city heading_two">
-                <h2 class="city_name">MAHARASHTRA</h2>
-                <p class="desc_of_city">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus totam laboriosam distinctio dolor iusto possimus placeat labore odit laudantium.</p>
-            </div>
-            <div class="info_of_city heading_three">
+            <div class="info_of_city heading_three" data-aos="fade">
                 <h2 class="city_name">KERLA</h2>
                 <p class="desc_of_city">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum magnam voluptatum incidunt in quia nam corrupti, magni modi tenetur et.</p>
             </div>
-            <div class="india_map flex">
+            <div class="info_of_city heading_two" data-aos="fade-right">
+                <h2 class="city_name">MAHARASHTRA</h2>
+                <p class="desc_of_city">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente delectus totam laboriosam distinctio dolor iusto possimus placeat labore odit laudantium.</p>
+            </div>
+            <div class="info_of_city heading_three" data-aos="fade-right">
+                <h2 class="city_name">KERLA</h2>
+                <p class="desc_of_city">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum magnam voluptatum incidunt in quia nam corrupti, magni modi tenetur et.</p>
+            </div>
+            <div class="india_map flex" data-aos="fade-up">
                 <img src="images/map of india.png" alt="">
             </div>
-            <span class="material-symbols-outlined location_icon_one"> location_on</span>
-            <span class="material-symbols-outlined location_icon_two"> location_on</span>
+            <span class="material-symbols-outlined location_icon_one" data-aos="fade-left"> location_on</span>
+            <span class="material-symbols-outlined location_icon_two" data-aos="fade-left"> location_on</span>
             <span class="material-symbols-outlined location_icon_three"> location_on</span>
         </div>
         <div class="ad-boxes" id="ad-boxes">
+            <video autoplay loop muted plays-inline>
+                <source src="https://youtu.be/qG4xYP1lnmE">
+            </video>
+            
         </div>
         <div class="extra_info_box" id="extra_info_box">
         </div>
         <div class="about_us_box" id="about_us_box">
         </div>
         <div class="footer" id="footer">
+            <div class="socialIcons flex">
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                <a href=""><i class="fa-brands fa-youtube"></i></a>
+                <a href=""><i class="fa-brands fa-discord"></i></a>
+            </div>
+            <div class="footerNav flex">
+                <ul class="footerUl">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Destination</a></li>
+                    <li><a href="">About us</a></li>
+                </ul>
+            </div>
+            <div class="last_note flex">
+                <p>Copyright &copy;2023;</p>
+            </div>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js" integrity="sha512-Ic9xkERjyZ1xgJ5svx3y0u3xrvfT/uPkV99LBwe68xjy/mGtO+4eURHZBW2xW4SZbFrF1Tf090XqB+EVgXnVjw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
